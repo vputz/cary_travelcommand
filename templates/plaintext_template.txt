@@ -1,0 +1,28 @@
+Note: This email is also in an easier-to-read HTML form!  View as HTML in your email program.
+
+Your daily travel costs for your planned trip:
+
+{% for leg in costs %}
+Leg: {{ leg.route['start'] }}->{{ leg.route['end'] }}
+{% if leg.costs.travel_cost.found %}
+Estimated Cost:
+Using estimator {{ leg.costs.travel_cost['estimator'] }}
+Of first {{ leg.costs.travel_cost['fares']|count }} fares, average cost was {{ leg.costs.travel_cost['fares']|mean|dollars }}
+{% else %}
+Unable to estimate cost for this leg!
+{% endif %}
+Stay location: {{ leg.staying_in }} ({{ leg.costs.matched_location }})
+{% if leg.costs.matched_location is none %}
+Unfortunately, I was unable to look up Per Diem costs for this leg!
+Try explicitly stating where you are staying by putting "staying in X" after
+your route, where X is your location in City, Country (or City, State, USA)
+form.
+{% else %}
+{% for day in leg.costs.dates %}
+Date: {{ day.day.strftime("%d %B %Y") }}
+Lodging: {{ day.lodging|dollars }} x {{day.lodging_multiplier}} = {{day.lodging_actual|dollars}}
+M&IE: {{ (day.meals+day.incidentals)|dollars }} x {{ day.mie_multiplier }} = {{day.mie_actual|dollars}}
+{% endfor %}
+{% endif %}
+{% endfor %}
+

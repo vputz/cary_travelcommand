@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<style type="text/css" >
+	.centerText{
+	    text-align: center;
+	}
+	</style>
+    </head>
+    <body>
+	<h1>Trip Summary</h1>
+	{% for leg in costs %}
+	<h2>Leg: {{ leg.route['start'] }} -- {{ leg.route['end'] }}</h2>
+	{% if leg.costs.travel_cost.found %}
+	<h3>Estimated Travel Cost</h3>
+	<p>Using estimator {{ leg.costs.travel_cost['estimator'] }}</p>
+	<p>Of first {{ leg.costs.travel_cost['fares']|count }} fares, average cost was {{ leg.costs.travel_cost['fares']|mean|dollars }}</p>
+	{% else %}
+	Unable to determine cost for this leg.
+	{% endif %}
+	<h3>Stay Location: {{ leg.staying_in }} ({{ leg.costs.matched_location }})</h3>
+	{% if leg.costs.matched_location is none %}
+	<h4>Warning!</h4>
+	<p>
+	    Unfortunately, I was unable to look up Per Diem costs for this leg!
+	</p>
+	<p>
+	    Try explicitly stating where you are staying by putting "staying in X" after
+	    your route, where X is your location in <pre>City, Country</pre> (or
+	    <pre>City, State, USA</pre>) form.
+	</p>
+	{% else %}
+	<table border="1"">
+	    <tr>
+		<th class="centerText" >Date</th>
+		<th class="centerText" >Lodging</th>
+		<th class="centerText" >Lodging Mult</th>
+		<th class="centerText" >Lodging Actual</th>
+		<th class="centerText" >M&IE</th>
+		<th class="centerText" >M&IE mult</th>
+		<th class="centerText" >M&IE Actual</th>
+	    </tr>
+	    {% for day in leg.costs.dates %}
+	    <tr>
+		<td class="centerText" >{{ day.day.strftime('%d %B %Y') }}</td>
+		<td class="centerText" >{{ day.lodging | dollars }}</td>
+		<td class="centerText" >{{ day.lodging_multiplier }}</td>
+		<td class="centerText" >{{ day.lodging_actual | dollars }}</td>
+		<td class="centerText" >{{ (day.meals+day.incidentals) | dollars }}</td>
+		<td class="centerText" >{{ day.mie_multiplier }}</td>
+		<td class="centerText" >{{ day.mie_actual | dollars }}</td>
+	    </tr>
+	    {% endfor %}
+	</table>
+	{% endif %}
+	{% endfor %}
+    </body>
+</html>

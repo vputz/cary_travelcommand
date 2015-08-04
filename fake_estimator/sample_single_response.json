@@ -1,0 +1,2650 @@
+{
+    "kind": "qpxExpress#tripsSearch", 
+    "trips": {
+        "kind": "qpxexpress#tripOptions", 
+        "data": {
+            "kind": "qpxexpress#data", 
+            "airport": [
+                {
+                    "code": "DUB", 
+                    "kind": "qpxexpress#airportData", 
+                    "city": "DUB", 
+                    "name": "Dublin International"
+                }, 
+                {
+                    "code": "LHR", 
+                    "kind": "qpxexpress#airportData", 
+                    "city": "LON", 
+                    "name": "London Heathrow"
+                }
+            ], 
+            "carrier": [
+                {
+                    "code": "BA", 
+                    "kind": "qpxexpress#carrierData", 
+                    "name": "British Airways p.l.c."
+                }, 
+                {
+                    "code": "EI", 
+                    "kind": "qpxexpress#carrierData", 
+                    "name": "Aer Lingus Limited"
+                }
+            ], 
+            "aircraft": [
+                {
+                    "code": "319", 
+                    "kind": "qpxexpress#aircraftData", 
+                    "name": "Airbus A319"
+                }, 
+                {
+                    "code": "320", 
+                    "kind": "qpxexpress#aircraftData", 
+                    "name": "Airbus A320"
+                }, 
+                {
+                    "code": "321", 
+                    "kind": "qpxexpress#aircraftData", 
+                    "name": "Airbus A321"
+                }, 
+                {
+                    "code": "32A", 
+                    "kind": "qpxexpress#aircraftData", 
+                    "name": "Airbus A320"
+                }
+            ], 
+            "city": [
+                {
+                    "code": "DUB", 
+                    "kind": "qpxexpress#cityData", 
+                    "name": "Dublin"
+                }, 
+                {
+                    "code": "LON", 
+                    "kind": "qpxexpress#cityData", 
+                    "name": "London"
+                }
+            ], 
+            "tax": [
+                {
+                    "kind": "qpxexpress#taxData", 
+                    "name": "EI YQ surcharge", 
+                    "id": "YQ_F"
+                }, 
+                {
+                    "kind": "qpxexpress#taxData", 
+                    "name": "EI YR surcharge", 
+                    "id": "YR_I"
+                }, 
+                {
+                    "kind": "qpxexpress#taxData", 
+                    "name": "United Kingdom Air Passengers Duty", 
+                    "id": "GB_001"
+                }, 
+                {
+                    "kind": "qpxexpress#taxData", 
+                    "name": "United Kingdom Passenger Service Charge", 
+                    "id": "UB"
+                }
+            ]
+        }, 
+        "tripOption": [
+            {
+                "kind": "qpxexpress#tripOption", 
+                "pricing": [
+                    {
+                        "kind": "qpxexpress#pricingInfo", 
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "segmentId": "GLJWos9wW+q4VIuU", 
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "kilos": 20
+                                    }
+                                ], 
+                                "fareId": "AZUcQrJKzABCNI6SRmgeo0TKH6d7O1dgR0emriLY+10I"
+                            }
+                        ], 
+                        "saleTotal": "USD166.60", 
+                        "baseFareTotal": "GBP29.00", 
+                        "fare": [
+                            {
+                                "destination": "DUB", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "origin": "LON", 
+                                "carrier": "EI", 
+                                "id": "AZUcQrJKzABCNI6SRmgeo0TKH6d7O1dgR0emriLY+10I", 
+                                "basisCode": "WUK26GDS"
+                            }
+                        ], 
+                        "saleTaxTotal": "USD121.60", 
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts", 
+                            "adultCount": 1
+                        }, 
+                        "latestTicketingTime": "2015-07-31T14:51-04:00", 
+                        "saleFareTotal": "USD45.00", 
+                        "fareCalculation": "LHR EI DUB 44.52WUK26GDS NUC 44.52 END ROE 0.651331 FARE GBP 29.00 EQU USD 45.00 XT 20.30GB 46.90UB 35.70YQ 18.70YR", 
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD20.30", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "GB", 
+                                "id": "GB_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD46.90", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "UB", 
+                                "id": "UB"
+                            }, 
+                            {
+                                "code": "YQ", 
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD35.70", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "id": "YQ_F"
+                            }, 
+                            {
+                                "code": "YR", 
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD18.70", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "id": "YR_I"
+                            }
+                        ], 
+                        "ptc": "ADT"
+                    }
+                ], 
+                "saleTotal": "USD166.60", 
+                "slice": [
+                    {
+                        "kind": "qpxexpress#sliceInfo", 
+                        "duration": 75, 
+                        "segment": [
+                            {
+                                "leg": [
+                                    {
+                                        "destination": "DUB", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "origin": "LHR", 
+                                        "departureTime": "2015-08-04T21:10+01:00", 
+                                        "arrivalTime": "2015-08-04T22:25+01:00", 
+                                        "aircraft": "320", 
+                                        "meal": "Food and Beverages for Purchase", 
+                                        "originTerminal": "2", 
+                                        "mileage": 278, 
+                                        "destinationTerminal": "2", 
+                                        "duration": 75, 
+                                        "id": "LQz0Us2V-Blgp60Z"
+                                    }
+                                ], 
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 4, 
+                                "bookingCode": "W", 
+                                "duration": 75, 
+                                "marriedSegmentGroup": "0", 
+                                "cabin": "COACH", 
+                                "id": "GLJWos9wW+q4VIuU", 
+                                "flight": {
+                                    "carrier": "EI", 
+                                    "number": "183"
+                                }
+                            }
+                        ]
+                    }
+                ], 
+                "id": "D37leMkIvO9RqnELeXer6O001"
+            }, 
+            {
+                "kind": "qpxexpress#tripOption", 
+                "pricing": [
+                    {
+                        "kind": "qpxexpress#pricingInfo", 
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "segmentId": "GbxkUHC9SqmYDIEa", 
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "kilos": 20
+                                    }
+                                ], 
+                                "fareId": "AZUcQrJKzABCNI6SRmgeo0TKH6d7O1dgR0emriLY+10I"
+                            }
+                        ], 
+                        "saleTotal": "USD166.60", 
+                        "baseFareTotal": "GBP29.00", 
+                        "fare": [
+                            {
+                                "destination": "DUB", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "origin": "LON", 
+                                "carrier": "EI", 
+                                "id": "AZUcQrJKzABCNI6SRmgeo0TKH6d7O1dgR0emriLY+10I", 
+                                "basisCode": "WUK26GDS"
+                            }
+                        ], 
+                        "saleTaxTotal": "USD121.60", 
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts", 
+                            "adultCount": 1
+                        }, 
+                        "latestTicketingTime": "2015-07-31T14:51-04:00", 
+                        "saleFareTotal": "USD45.00", 
+                        "fareCalculation": "LHR EI DUB 44.52WUK26GDS NUC 44.52 END ROE 0.651331 FARE GBP 29.00 EQU USD 45.00 XT 20.30GB 46.90UB 35.70YQ 18.70YR", 
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD20.30", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "GB", 
+                                "id": "GB_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD46.90", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "UB", 
+                                "id": "UB"
+                            }, 
+                            {
+                                "code": "YQ", 
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD35.70", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "id": "YQ_F"
+                            }, 
+                            {
+                                "code": "YR", 
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD18.70", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "id": "YR_I"
+                            }
+                        ], 
+                        "ptc": "ADT"
+                    }
+                ], 
+                "saleTotal": "USD166.60", 
+                "slice": [
+                    {
+                        "kind": "qpxexpress#sliceInfo", 
+                        "duration": 80, 
+                        "segment": [
+                            {
+                                "leg": [
+                                    {
+                                        "destination": "DUB", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "origin": "LHR", 
+                                        "departureTime": "2015-08-04T16:50+01:00", 
+                                        "arrivalTime": "2015-08-04T18:10+01:00", 
+                                        "aircraft": "320", 
+                                        "meal": "Food and Beverages for Purchase", 
+                                        "originTerminal": "2", 
+                                        "mileage": 278, 
+                                        "destinationTerminal": "2", 
+                                        "duration": 80, 
+                                        "id": "Lkr8yGI3mi3aX3cc"
+                                    }
+                                ], 
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 4, 
+                                "bookingCode": "W", 
+                                "duration": 80, 
+                                "marriedSegmentGroup": "0", 
+                                "cabin": "COACH", 
+                                "id": "GbxkUHC9SqmYDIEa", 
+                                "flight": {
+                                    "carrier": "EI", 
+                                    "number": "169"
+                                }
+                            }
+                        ]
+                    }
+                ], 
+                "id": "D37leMkIvO9RqnELeXer6O002"
+            }, 
+            {
+                "kind": "qpxexpress#tripOption", 
+                "pricing": [
+                    {
+                        "kind": "qpxexpress#pricingInfo", 
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "segmentId": "GiD9pKpPi5jO6tNR", 
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "kilos": 20
+                                    }
+                                ], 
+                                "fareId": "AwTcPCu3XtNRs7Q/3gg8IRTBGGeIIsjneQq9ArxGHlgI"
+                            }
+                        ], 
+                        "saleTotal": "USD179.60", 
+                        "baseFareTotal": "GBP37.00", 
+                        "fare": [
+                            {
+                                "destination": "DUB", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "origin": "LON", 
+                                "carrier": "EI", 
+                                "id": "AwTcPCu3XtNRs7Q/3gg8IRTBGGeIIsjneQq9ArxGHlgI", 
+                                "basisCode": "OUK26GDS"
+                            }
+                        ], 
+                        "saleTaxTotal": "USD121.60", 
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts", 
+                            "adultCount": 1
+                        }, 
+                        "latestTicketingTime": "2015-07-31T14:51-04:00", 
+                        "saleFareTotal": "USD58.00", 
+                        "fareCalculation": "LHR EI DUB 56.80OUK26GDS NUC 56.80 END ROE 0.651331 FARE GBP 37.00 EQU USD 58.00 XT 20.30GB 46.90UB 35.70YQ 18.70YR", 
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD20.30", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "GB", 
+                                "id": "GB_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD46.90", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "UB", 
+                                "id": "UB"
+                            }, 
+                            {
+                                "code": "YQ", 
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD35.70", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "id": "YQ_F"
+                            }, 
+                            {
+                                "code": "YR", 
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD18.70", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "id": "YR_I"
+                            }
+                        ], 
+                        "ptc": "ADT"
+                    }
+                ], 
+                "saleTotal": "USD179.60", 
+                "slice": [
+                    {
+                        "kind": "qpxexpress#sliceInfo", 
+                        "duration": 75, 
+                        "segment": [
+                            {
+                                "leg": [
+                                    {
+                                        "destination": "DUB", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "origin": "LHR", 
+                                        "departureTime": "2015-08-04T18:10+01:00", 
+                                        "arrivalTime": "2015-08-04T19:25+01:00", 
+                                        "aircraft": "320", 
+                                        "meal": "Food and Beverages for Purchase", 
+                                        "originTerminal": "2", 
+                                        "mileage": 278, 
+                                        "destinationTerminal": "2", 
+                                        "duration": 75, 
+                                        "id": "L40cvpaoTuoOlfbG"
+                                    }
+                                ], 
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 4, 
+                                "bookingCode": "O", 
+                                "duration": 75, 
+                                "marriedSegmentGroup": "0", 
+                                "cabin": "COACH", 
+                                "id": "GiD9pKpPi5jO6tNR", 
+                                "flight": {
+                                    "carrier": "EI", 
+                                    "number": "175"
+                                }
+                            }
+                        ]
+                    }
+                ], 
+                "id": "D37leMkIvO9RqnELeXer6O003"
+            }, 
+            {
+                "kind": "qpxexpress#tripOption", 
+                "pricing": [
+                    {
+                        "kind": "qpxexpress#pricingInfo", 
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "segmentId": "G9rWdS31OSaJ15Is", 
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "kilos": 20
+                                    }
+                                ], 
+                                "fareId": "AJd/KHNKKtN5KIrcFXuXhpO1Fq3WBpHAzH4oEeOvZAC/"
+                            }
+                        ], 
+                        "saleTotal": "USD186.60", 
+                        "baseFareTotal": "GBP42.00", 
+                        "fare": [
+                            {
+                                "destination": "DUB", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "origin": "LON", 
+                                "carrier": "EI", 
+                                "id": "AJd/KHNKKtN5KIrcFXuXhpO1Fq3WBpHAzH4oEeOvZAC/", 
+                                "basisCode": "SUK26GDS"
+                            }
+                        ], 
+                        "saleTaxTotal": "USD121.60", 
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts", 
+                            "adultCount": 1
+                        }, 
+                        "latestTicketingTime": "2015-07-31T14:51-04:00", 
+                        "saleFareTotal": "USD65.00", 
+                        "fareCalculation": "LHR EI DUB 64.48SUK26GDS NUC 64.48 END ROE 0.651331 FARE GBP 42.00 EQU USD 65.00 XT 20.30GB 46.90UB 35.70YQ 18.70YR", 
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD20.30", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "GB", 
+                                "id": "GB_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD46.90", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "UB", 
+                                "id": "UB"
+                            }, 
+                            {
+                                "code": "YQ", 
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD35.70", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "id": "YQ_F"
+                            }, 
+                            {
+                                "code": "YR", 
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD18.70", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "id": "YR_I"
+                            }
+                        ], 
+                        "ptc": "ADT"
+                    }
+                ], 
+                "saleTotal": "USD186.60", 
+                "slice": [
+                    {
+                        "kind": "qpxexpress#sliceInfo", 
+                        "duration": 80, 
+                        "segment": [
+                            {
+                                "leg": [
+                                    {
+                                        "destination": "DUB", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "origin": "LHR", 
+                                        "departureTime": "2015-08-04T14:15+01:00", 
+                                        "arrivalTime": "2015-08-04T15:35+01:00", 
+                                        "aircraft": "321", 
+                                        "meal": "Food and Beverages for Purchase", 
+                                        "originTerminal": "2", 
+                                        "mileage": 278, 
+                                        "destinationTerminal": "2", 
+                                        "duration": 80, 
+                                        "id": "LNC8OYbKhjRb8gBE"
+                                    }
+                                ], 
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 4, 
+                                "bookingCode": "S", 
+                                "duration": 80, 
+                                "marriedSegmentGroup": "0", 
+                                "cabin": "COACH", 
+                                "id": "G9rWdS31OSaJ15Is", 
+                                "flight": {
+                                    "carrier": "EI", 
+                                    "number": "165"
+                                }
+                            }
+                        ]
+                    }
+                ], 
+                "id": "D37leMkIvO9RqnELeXer6O005"
+            }, 
+            {
+                "kind": "qpxexpress#tripOption", 
+                "pricing": [
+                    {
+                        "kind": "qpxexpress#pricingInfo", 
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "segmentId": "GRlZo7wRub4YRyA2", 
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "kilos": 20
+                                    }
+                                ], 
+                                "fareId": "AJd/KHNKKtN5KIrcFXuXhpO1Fq3WBpHAzH4oEeOvZAC/"
+                            }
+                        ], 
+                        "saleTotal": "USD186.60", 
+                        "baseFareTotal": "GBP42.00", 
+                        "fare": [
+                            {
+                                "destination": "DUB", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "origin": "LON", 
+                                "carrier": "EI", 
+                                "id": "AJd/KHNKKtN5KIrcFXuXhpO1Fq3WBpHAzH4oEeOvZAC/", 
+                                "basisCode": "SUK26GDS"
+                            }
+                        ], 
+                        "saleTaxTotal": "USD121.60", 
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts", 
+                            "adultCount": 1
+                        }, 
+                        "latestTicketingTime": "2015-07-31T14:51-04:00", 
+                        "saleFareTotal": "USD65.00", 
+                        "fareCalculation": "LHR EI DUB 64.48SUK26GDS NUC 64.48 END ROE 0.651331 FARE GBP 42.00 EQU USD 65.00 XT 20.30GB 46.90UB 35.70YQ 18.70YR", 
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD20.30", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "GB", 
+                                "id": "GB_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD46.90", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "UB", 
+                                "id": "UB"
+                            }, 
+                            {
+                                "code": "YQ", 
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD35.70", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "id": "YQ_F"
+                            }, 
+                            {
+                                "code": "YR", 
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD18.70", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "id": "YR_I"
+                            }
+                        ], 
+                        "ptc": "ADT"
+                    }
+                ], 
+                "saleTotal": "USD186.60", 
+                "slice": [
+                    {
+                        "kind": "qpxexpress#sliceInfo", 
+                        "duration": 80, 
+                        "segment": [
+                            {
+                                "leg": [
+                                    {
+                                        "destination": "DUB", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "origin": "LHR", 
+                                        "departureTime": "2015-08-04T15:50+01:00", 
+                                        "arrivalTime": "2015-08-04T17:10+01:00", 
+                                        "aircraft": "320", 
+                                        "meal": "Food and Beverages for Purchase", 
+                                        "originTerminal": "2", 
+                                        "mileage": 278, 
+                                        "destinationTerminal": "2", 
+                                        "duration": 80, 
+                                        "id": "LimQZwN2OjYTDSYY"
+                                    }
+                                ], 
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 4, 
+                                "bookingCode": "S", 
+                                "duration": 80, 
+                                "marriedSegmentGroup": "0", 
+                                "cabin": "COACH", 
+                                "id": "GRlZo7wRub4YRyA2", 
+                                "flight": {
+                                    "carrier": "EI", 
+                                    "number": "167"
+                                }
+                            }
+                        ]
+                    }
+                ], 
+                "id": "D37leMkIvO9RqnELeXer6O006"
+            }, 
+            {
+                "kind": "qpxexpress#tripOption", 
+                "pricing": [
+                    {
+                        "kind": "qpxexpress#pricingInfo", 
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "segmentId": "GDyS65CG0onlLobB", 
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "kilos": 20
+                                    }
+                                ], 
+                                "fareId": "AJd/KHNKKtN5KIrcFXuXhpO1Fq3WBpHAzH4oEeOvZAC/"
+                            }
+                        ], 
+                        "saleTotal": "USD186.60", 
+                        "baseFareTotal": "GBP42.00", 
+                        "fare": [
+                            {
+                                "destination": "DUB", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "origin": "LON", 
+                                "carrier": "EI", 
+                                "id": "AJd/KHNKKtN5KIrcFXuXhpO1Fq3WBpHAzH4oEeOvZAC/", 
+                                "basisCode": "SUK26GDS"
+                            }
+                        ], 
+                        "saleTaxTotal": "USD121.60", 
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts", 
+                            "adultCount": 1
+                        }, 
+                        "latestTicketingTime": "2015-07-31T14:51-04:00", 
+                        "saleFareTotal": "USD65.00", 
+                        "fareCalculation": "LHR EI DUB 64.48SUK26GDS NUC 64.48 END ROE 0.651331 FARE GBP 42.00 EQU USD 65.00 XT 20.30GB 46.90UB 35.70YQ 18.70YR", 
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD20.30", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "GB", 
+                                "id": "GB_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD46.90", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "UB", 
+                                "id": "UB"
+                            }, 
+                            {
+                                "code": "YQ", 
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD35.70", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "id": "YQ_F"
+                            }, 
+                            {
+                                "code": "YR", 
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD18.70", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "id": "YR_I"
+                            }
+                        ], 
+                        "ptc": "ADT"
+                    }
+                ], 
+                "saleTotal": "USD186.60", 
+                "slice": [
+                    {
+                        "kind": "qpxexpress#sliceInfo", 
+                        "duration": 75, 
+                        "segment": [
+                            {
+                                "leg": [
+                                    {
+                                        "destination": "DUB", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "origin": "LHR", 
+                                        "departureTime": "2015-08-04T19:10+01:00", 
+                                        "arrivalTime": "2015-08-04T20:25+01:00", 
+                                        "aircraft": "320", 
+                                        "meal": "Food and Beverages for Purchase", 
+                                        "originTerminal": "2", 
+                                        "mileage": 278, 
+                                        "destinationTerminal": "2", 
+                                        "duration": 75, 
+                                        "id": "LZrMqQr64SjSeUM9"
+                                    }
+                                ], 
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 4, 
+                                "bookingCode": "S", 
+                                "duration": 75, 
+                                "marriedSegmentGroup": "0", 
+                                "cabin": "COACH", 
+                                "id": "GDyS65CG0onlLobB", 
+                                "flight": {
+                                    "carrier": "EI", 
+                                    "number": "177"
+                                }
+                            }
+                        ]
+                    }
+                ], 
+                "id": "D37leMkIvO9RqnELeXer6O004"
+            }, 
+            {
+                "kind": "qpxexpress#tripOption", 
+                "pricing": [
+                    {
+                        "kind": "qpxexpress#pricingInfo", 
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "segmentId": "GPgU1fbvB8noahdn", 
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "kilos": 20
+                                    }
+                                ], 
+                                "fareId": "AFF2i/Vq2sr2I5Fu8jRs3m4TSEvPFTPJe2sEqGldeu7I"
+                            }
+                        ], 
+                        "saleTotal": "USD211.60", 
+                        "baseFareTotal": "GBP58.00", 
+                        "fare": [
+                            {
+                                "destination": "DUB", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "origin": "LON", 
+                                "carrier": "EI", 
+                                "id": "AFF2i/Vq2sr2I5Fu8jRs3m4TSEvPFTPJe2sEqGldeu7I", 
+                                "basisCode": "EUK26GDS"
+                            }
+                        ], 
+                        "saleTaxTotal": "USD121.60", 
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts", 
+                            "adultCount": 1
+                        }, 
+                        "latestTicketingTime": "2015-07-31T14:51-04:00", 
+                        "saleFareTotal": "USD90.00", 
+                        "fareCalculation": "LHR EI DUB 89.04EUK26GDS NUC 89.04 END ROE 0.651331 FARE GBP 58.00 EQU USD 90.00 XT 20.30GB 46.90UB 35.70YQ 18.70YR", 
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD20.30", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "GB", 
+                                "id": "GB_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD46.90", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "UB", 
+                                "id": "UB"
+                            }, 
+                            {
+                                "code": "YQ", 
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD35.70", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "id": "YQ_F"
+                            }, 
+                            {
+                                "code": "YR", 
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD18.70", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "id": "YR_I"
+                            }
+                        ], 
+                        "ptc": "ADT"
+                    }
+                ], 
+                "saleTotal": "USD211.60", 
+                "slice": [
+                    {
+                        "kind": "qpxexpress#sliceInfo", 
+                        "duration": 75, 
+                        "segment": [
+                            {
+                                "leg": [
+                                    {
+                                        "destination": "DUB", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "origin": "LHR", 
+                                        "departureTime": "2015-08-04T20:10+01:00", 
+                                        "arrivalTime": "2015-08-04T21:25+01:00", 
+                                        "aircraft": "320", 
+                                        "meal": "Food and Beverages for Purchase", 
+                                        "originTerminal": "2", 
+                                        "mileage": 278, 
+                                        "destinationTerminal": "2", 
+                                        "duration": 75, 
+                                        "id": "LmTyRp0vp8yeKuZQ"
+                                    }
+                                ], 
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 4, 
+                                "bookingCode": "E", 
+                                "duration": 75, 
+                                "marriedSegmentGroup": "0", 
+                                "cabin": "COACH", 
+                                "id": "GPgU1fbvB8noahdn", 
+                                "flight": {
+                                    "carrier": "EI", 
+                                    "number": "179"
+                                }
+                            }
+                        ]
+                    }
+                ], 
+                "id": "D37leMkIvO9RqnELeXer6O007"
+            }, 
+            {
+                "kind": "qpxexpress#tripOption", 
+                "pricing": [
+                    {
+                        "kind": "qpxexpress#pricingInfo", 
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "segmentId": "GBees9HApNL5+OBp", 
+                                "freeBaggageOption": [
+                                    {
+                                        "pieces": 1, 
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "bagDescriptor": [
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "BAG MAX 23KG 51LB  208LCM 81LI", 
+                                                "subcode": "0IZ", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 81 li/208 lcm"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "SPORTS EQUIPMENT 23KG 51LB", 
+                                                "subcode": "0I1", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 81 li/208 lcm"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "MUSICAL INSTRUMENT 23KG 51LB", 
+                                                "subcode": "0I2", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 81 li/208 lcm"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "MEDIA EQUIPMENT 23KG 51LB", 
+                                                "subcode": "0IP", 
+                                                "description": [
+                                                    "Media Equipment", 
+                                                    "Up to 50 lb/23 kg"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "BICYCLE", 
+                                                "subcode": "0EC", 
+                                                "description": [
+                                                    "Bicycle"
+                                                ], 
+                                                "count": 1
+                                            }
+                                        ]
+                                    }
+                                ], 
+                                "fareId": "AIYOh3DhviwfXLZUQLSztiFhaD0iBTP/g6Cm7LV57JPw"
+                            }
+                        ], 
+                        "saleTotal": "USD220.20", 
+                        "baseFareTotal": "GBP98.00", 
+                        "fare": [
+                            {
+                                "destination": "DUB", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "origin": "LON", 
+                                "carrier": "BA", 
+                                "id": "AIYOh3DhviwfXLZUQLSztiFhaD0iBTP/g6Cm7LV57JPw", 
+                                "basisCode": "VV1RO"
+                            }
+                        ], 
+                        "saleTaxTotal": "USD67.20", 
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts", 
+                            "adultCount": 1
+                        }, 
+                        "latestTicketingTime": "2015-08-02T23:59-04:00", 
+                        "saleFareTotal": "USD153.00", 
+                        "fareCalculation": "LON BA DUB 150.46VV1RO NUC 150.46 END ROE 0.651331 FARE GBP 98.00 EQU USD 153.00 XT 20.30GB 46.90UB", 
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD46.90", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "UB", 
+                                "id": "UB"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD20.30", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "GB", 
+                                "id": "GB_001"
+                            }
+                        ], 
+                        "ptc": "ADT"
+                    }
+                ], 
+                "saleTotal": "USD220.20", 
+                "slice": [
+                    {
+                        "kind": "qpxexpress#sliceInfo", 
+                        "duration": 75, 
+                        "segment": [
+                            {
+                                "leg": [
+                                    {
+                                        "destination": "DUB", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "origin": "LHR", 
+                                        "departureTime": "2015-08-04T18:50+01:00", 
+                                        "arrivalTime": "2015-08-04T20:05+01:00", 
+                                        "aircraft": "319", 
+                                        "meal": "Snack or Brunch", 
+                                        "originTerminal": "5", 
+                                        "mileage": 278, 
+                                        "destinationTerminal": "1", 
+                                        "duration": 75, 
+                                        "id": "LgjSxjVnrF7UqeVk"
+                                    }
+                                ], 
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 4, 
+                                "bookingCode": "V", 
+                                "duration": 75, 
+                                "marriedSegmentGroup": "0", 
+                                "cabin": "COACH", 
+                                "id": "GBees9HApNL5+OBp", 
+                                "flight": {
+                                    "carrier": "BA", 
+                                    "number": "838"
+                                }
+                            }
+                        ]
+                    }
+                ], 
+                "id": "D37leMkIvO9RqnELeXer6O008"
+            }, 
+            {
+                "kind": "qpxexpress#tripOption", 
+                "pricing": [
+                    {
+                        "kind": "qpxexpress#pricingInfo", 
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "segmentId": "GYO1J4rOCf3Vp-dx", 
+                                "freeBaggageOption": [
+                                    {
+                                        "pieces": 1, 
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "bagDescriptor": [
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "BAG MAX 23KG 51LB  208LCM 81LI", 
+                                                "subcode": "0IZ", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 81 li/208 lcm"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "SPORTS EQUIPMENT 23KG 51LB", 
+                                                "subcode": "0I1", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 81 li/208 lcm"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "MUSICAL INSTRUMENT 23KG 51LB", 
+                                                "subcode": "0I2", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 81 li/208 lcm"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "MEDIA EQUIPMENT 23KG 51LB", 
+                                                "subcode": "0IP", 
+                                                "description": [
+                                                    "Media Equipment", 
+                                                    "Up to 50 lb/23 kg"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "BICYCLE", 
+                                                "subcode": "0EC", 
+                                                "description": [
+                                                    "Bicycle"
+                                                ], 
+                                                "count": 1
+                                            }
+                                        ]
+                                    }
+                                ], 
+                                "fareId": "ASEmIM5p9xXYL4nMc1h6IeuWpTr9s5A5sjFIOzgofgx/"
+                            }
+                        ], 
+                        "saleTotal": "USD246.20", 
+                        "baseFareTotal": "GBP115.00", 
+                        "fare": [
+                            {
+                                "destination": "DUB", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "origin": "LON", 
+                                "carrier": "BA", 
+                                "id": "ASEmIM5p9xXYL4nMc1h6IeuWpTr9s5A5sjFIOzgofgx/", 
+                                "basisCode": "LV2RO"
+                            }
+                        ], 
+                        "saleTaxTotal": "USD67.20", 
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts", 
+                            "adultCount": 1
+                        }, 
+                        "latestTicketingTime": "2015-08-02T23:59-04:00", 
+                        "saleFareTotal": "USD179.00", 
+                        "fareCalculation": "LON BA DUB 176.56LV2RO NUC 176.56 END ROE 0.651331 FARE GBP 115.00 EQU USD 179.00 XT 20.30GB 46.90UB", 
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD46.90", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "UB", 
+                                "id": "UB"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD20.30", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "GB", 
+                                "id": "GB_001"
+                            }
+                        ], 
+                        "ptc": "ADT"
+                    }
+                ], 
+                "saleTotal": "USD246.20", 
+                "slice": [
+                    {
+                        "kind": "qpxexpress#sliceInfo", 
+                        "duration": 80, 
+                        "segment": [
+                            {
+                                "leg": [
+                                    {
+                                        "destination": "DUB", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "origin": "LHR", 
+                                        "departureTime": "2015-08-04T10:25+01:00", 
+                                        "arrivalTime": "2015-08-04T11:45+01:00", 
+                                        "aircraft": "320", 
+                                        "meal": "Snack or Brunch", 
+                                        "originTerminal": "5", 
+                                        "mileage": 278, 
+                                        "destinationTerminal": "1", 
+                                        "duration": 80, 
+                                        "id": "LK+6AODS3ziQkluT"
+                                    }
+                                ], 
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 3, 
+                                "bookingCode": "L", 
+                                "duration": 80, 
+                                "marriedSegmentGroup": "0", 
+                                "cabin": "COACH", 
+                                "id": "GYO1J4rOCf3Vp-dx", 
+                                "flight": {
+                                    "carrier": "BA", 
+                                    "number": "834"
+                                }
+                            }
+                        ]
+                    }
+                ], 
+                "id": "D37leMkIvO9RqnELeXer6O00A"
+            }, 
+            {
+                "kind": "qpxexpress#tripOption", 
+                "pricing": [
+                    {
+                        "kind": "qpxexpress#pricingInfo", 
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "segmentId": "G1kplTDvoDmrsm4j", 
+                                "freeBaggageOption": [
+                                    {
+                                        "pieces": 1, 
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "bagDescriptor": [
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "BAG MAX 23KG 51LB  208LCM 81LI", 
+                                                "subcode": "0IZ", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 81 li/208 lcm"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "SPORTS EQUIPMENT 23KG 51LB", 
+                                                "subcode": "0I1", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 81 li/208 lcm"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "MUSICAL INSTRUMENT 23KG 51LB", 
+                                                "subcode": "0I2", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 81 li/208 lcm"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "MEDIA EQUIPMENT 23KG 51LB", 
+                                                "subcode": "0IP", 
+                                                "description": [
+                                                    "Media Equipment", 
+                                                    "Up to 50 lb/23 kg"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "BICYCLE", 
+                                                "subcode": "0EC", 
+                                                "description": [
+                                                    "Bicycle"
+                                                ], 
+                                                "count": 1
+                                            }
+                                        ]
+                                    }
+                                ], 
+                                "fareId": "ASEmIM5p9xXYL4nMc1h6IeuWpTr9s5A5sjFIOzgofgx/"
+                            }
+                        ], 
+                        "saleTotal": "USD246.20", 
+                        "baseFareTotal": "GBP115.00", 
+                        "fare": [
+                            {
+                                "destination": "DUB", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "origin": "LON", 
+                                "carrier": "BA", 
+                                "id": "ASEmIM5p9xXYL4nMc1h6IeuWpTr9s5A5sjFIOzgofgx/", 
+                                "basisCode": "LV2RO"
+                            }
+                        ], 
+                        "saleTaxTotal": "USD67.20", 
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts", 
+                            "adultCount": 1
+                        }, 
+                        "latestTicketingTime": "2015-08-02T23:59-04:00", 
+                        "saleFareTotal": "USD179.00", 
+                        "fareCalculation": "LON BA DUB 176.56LV2RO NUC 176.56 END ROE 0.651331 FARE GBP 115.00 EQU USD 179.00 XT 20.30GB 46.90UB", 
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD46.90", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "UB", 
+                                "id": "UB"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD20.30", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "GB", 
+                                "id": "GB_001"
+                            }
+                        ], 
+                        "ptc": "ADT"
+                    }
+                ], 
+                "saleTotal": "USD246.20", 
+                "slice": [
+                    {
+                        "kind": "qpxexpress#sliceInfo", 
+                        "duration": 75, 
+                        "segment": [
+                            {
+                                "leg": [
+                                    {
+                                        "destination": "DUB", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "origin": "LHR", 
+                                        "departureTime": "2015-08-04T21:40+01:00", 
+                                        "arrivalTime": "2015-08-04T22:55+01:00", 
+                                        "aircraft": "319", 
+                                        "meal": "Snack or Brunch", 
+                                        "originTerminal": "5", 
+                                        "mileage": 278, 
+                                        "destinationTerminal": "1", 
+                                        "duration": 75, 
+                                        "id": "L-H1XjGXn7g4yNRv"
+                                    }
+                                ], 
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 9, 
+                                "bookingCode": "L", 
+                                "duration": 75, 
+                                "marriedSegmentGroup": "0", 
+                                "cabin": "COACH", 
+                                "id": "G1kplTDvoDmrsm4j", 
+                                "flight": {
+                                    "carrier": "BA", 
+                                    "number": "826"
+                                }
+                            }
+                        ]
+                    }
+                ], 
+                "id": "D37leMkIvO9RqnELeXer6O009"
+            }, 
+            {
+                "kind": "qpxexpress#tripOption", 
+                "pricing": [
+                    {
+                        "kind": "qpxexpress#pricingInfo", 
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "segmentId": "GVf5KcvAWSlIfE-H", 
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "kilos": 20
+                                    }
+                                ], 
+                                "fareId": "A4CuJZQedwpsqfkY8RsLznppe5NKnM3ucSYDiZ8iSeL6"
+                            }
+                        ], 
+                        "saleTotal": "USD266.60", 
+                        "baseFareTotal": "GBP93.00", 
+                        "fare": [
+                            {
+                                "destination": "DUB", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "origin": "LON", 
+                                "carrier": "EI", 
+                                "id": "A4CuJZQedwpsqfkY8RsLznppe5NKnM3ucSYDiZ8iSeL6", 
+                                "basisCode": "VUK26GDS"
+                            }
+                        ], 
+                        "saleTaxTotal": "USD121.60", 
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts", 
+                            "adultCount": 1
+                        }, 
+                        "latestTicketingTime": "2015-07-31T14:51-04:00", 
+                        "saleFareTotal": "USD145.00", 
+                        "fareCalculation": "LHR EI DUB 142.78VUK26GDS NUC 142.78 END ROE 0.651331 FARE GBP 93.00 EQU USD 145.00 XT 20.30GB 46.90UB 35.70YQ 18.70YR", 
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD20.30", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "GB", 
+                                "id": "GB_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD46.90", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "UB", 
+                                "id": "UB"
+                            }, 
+                            {
+                                "code": "YQ", 
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD35.70", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "id": "YQ_F"
+                            }, 
+                            {
+                                "code": "YR", 
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD18.70", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "id": "YR_I"
+                            }
+                        ], 
+                        "ptc": "ADT"
+                    }
+                ], 
+                "saleTotal": "USD266.60", 
+                "slice": [
+                    {
+                        "kind": "qpxexpress#sliceInfo", 
+                        "duration": 80, 
+                        "segment": [
+                            {
+                                "leg": [
+                                    {
+                                        "destination": "DUB", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "origin": "LHR", 
+                                        "departureTime": "2015-08-04T12:00+01:00", 
+                                        "arrivalTime": "2015-08-04T13:20+01:00", 
+                                        "aircraft": "320", 
+                                        "meal": "Food and Beverages for Purchase", 
+                                        "originTerminal": "2", 
+                                        "mileage": 278, 
+                                        "destinationTerminal": "2", 
+                                        "duration": 80, 
+                                        "id": "LZdZnvfDiru60nW9"
+                                    }
+                                ], 
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 4, 
+                                "bookingCode": "V", 
+                                "duration": 80, 
+                                "marriedSegmentGroup": "0", 
+                                "cabin": "COACH", 
+                                "id": "GVf5KcvAWSlIfE-H", 
+                                "flight": {
+                                    "carrier": "EI", 
+                                    "number": "159"
+                                }
+                            }
+                        ]
+                    }
+                ], 
+                "id": "D37leMkIvO9RqnELeXer6O00B"
+            }, 
+            {
+                "kind": "qpxexpress#tripOption", 
+                "pricing": [
+                    {
+                        "kind": "qpxexpress#pricingInfo", 
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "segmentId": "G7GSlMESd8Ba6XT2", 
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "kilos": 20
+                                    }
+                                ], 
+                                "fareId": "A+2RiPPKxekVVrBCgq7FKyrYVGZnZOnvNsAhFWaekukc"
+                            }
+                        ], 
+                        "saleTotal": "USD280.60", 
+                        "baseFareTotal": "GBP102.00", 
+                        "fare": [
+                            {
+                                "destination": "DUB", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "origin": "LON", 
+                                "carrier": "EI", 
+                                "id": "A+2RiPPKxekVVrBCgq7FKyrYVGZnZOnvNsAhFWaekukc", 
+                                "basisCode": "MUK26GDS"
+                            }
+                        ], 
+                        "saleTaxTotal": "USD121.60", 
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts", 
+                            "adultCount": 1
+                        }, 
+                        "latestTicketingTime": "2015-07-31T14:51-04:00", 
+                        "saleFareTotal": "USD159.00", 
+                        "fareCalculation": "LHR EI DUB 156.60MUK26GDS NUC 156.60 END ROE 0.651331 FARE GBP 102.00 EQU USD 159.00 XT 20.30GB 46.90UB 35.70YQ 18.70YR", 
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD20.30", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "GB", 
+                                "id": "GB_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD46.90", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "UB", 
+                                "id": "UB"
+                            }, 
+                            {
+                                "code": "YQ", 
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD35.70", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "id": "YQ_F"
+                            }, 
+                            {
+                                "code": "YR", 
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD18.70", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "id": "YR_I"
+                            }
+                        ], 
+                        "ptc": "ADT"
+                    }
+                ], 
+                "saleTotal": "USD280.60", 
+                "slice": [
+                    {
+                        "kind": "qpxexpress#sliceInfo", 
+                        "duration": 80, 
+                        "segment": [
+                            {
+                                "leg": [
+                                    {
+                                        "destination": "DUB", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "origin": "LHR", 
+                                        "departureTime": "2015-08-04T09:50+01:00", 
+                                        "arrivalTime": "2015-08-04T11:10+01:00", 
+                                        "aircraft": "321", 
+                                        "meal": "Food and Beverages for Purchase", 
+                                        "originTerminal": "2", 
+                                        "mileage": 278, 
+                                        "destinationTerminal": "2", 
+                                        "duration": 80, 
+                                        "id": "LGSlNtH7pJ+naVXa"
+                                    }
+                                ], 
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 4, 
+                                "bookingCode": "M", 
+                                "duration": 80, 
+                                "marriedSegmentGroup": "0", 
+                                "cabin": "COACH", 
+                                "id": "G7GSlMESd8Ba6XT2", 
+                                "flight": {
+                                    "carrier": "EI", 
+                                    "number": "155"
+                                }
+                            }
+                        ]
+                    }
+                ], 
+                "id": "D37leMkIvO9RqnELeXer6O00C"
+            }, 
+            {
+                "kind": "qpxexpress#tripOption", 
+                "pricing": [
+                    {
+                        "kind": "qpxexpress#pricingInfo", 
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "segmentId": "G64vLc9csJn6Is-E", 
+                                "freeBaggageOption": [
+                                    {
+                                        "pieces": 1, 
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "bagDescriptor": [
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "BAG MAX 23KG 51LB  208LCM 81LI", 
+                                                "subcode": "0IZ", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 81 li/208 lcm"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "SPORTS EQUIPMENT 23KG 51LB", 
+                                                "subcode": "0I1", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 81 li/208 lcm"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "MUSICAL INSTRUMENT 23KG 51LB", 
+                                                "subcode": "0I2", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 81 li/208 lcm"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "MEDIA EQUIPMENT 23KG 51LB", 
+                                                "subcode": "0IP", 
+                                                "description": [
+                                                    "Media Equipment", 
+                                                    "Up to 50 lb/23 kg"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "BICYCLE", 
+                                                "subcode": "0EC", 
+                                                "description": [
+                                                    "Bicycle"
+                                                ], 
+                                                "count": 1
+                                            }
+                                        ]
+                                    }
+                                ], 
+                                "fareId": "A2yYrptjIp3ejmNTMFpldYRNbEE5zh0NBcsDBUfBkvCM"
+                            }
+                        ], 
+                        "saleTotal": "USD301.20", 
+                        "baseFareTotal": "GBP150.00", 
+                        "fare": [
+                            {
+                                "destination": "DUB", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "origin": "LON", 
+                                "carrier": "BA", 
+                                "id": "A2yYrptjIp3ejmNTMFpldYRNbEE5zh0NBcsDBUfBkvCM", 
+                                "basisCode": "MV2RO"
+                            }
+                        ], 
+                        "saleTaxTotal": "USD67.20", 
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts", 
+                            "adultCount": 1
+                        }, 
+                        "latestTicketingTime": "2015-08-02T23:59-04:00", 
+                        "saleFareTotal": "USD234.00", 
+                        "fareCalculation": "LON BA DUB 230.29MV2RO NUC 230.29 END ROE 0.651331 FARE GBP 150.00 EQU USD 234.00 XT 20.30GB 46.90UB", 
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD46.90", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "UB", 
+                                "id": "UB"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD20.30", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "GB", 
+                                "id": "GB_001"
+                            }
+                        ], 
+                        "ptc": "ADT"
+                    }
+                ], 
+                "saleTotal": "USD301.20", 
+                "slice": [
+                    {
+                        "kind": "qpxexpress#sliceInfo", 
+                        "duration": 75, 
+                        "segment": [
+                            {
+                                "leg": [
+                                    {
+                                        "destination": "DUB", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "origin": "LHR", 
+                                        "departureTime": "2015-08-04T13:25+01:00", 
+                                        "arrivalTime": "2015-08-04T14:40+01:00", 
+                                        "aircraft": "320", 
+                                        "meal": "Snack or Brunch", 
+                                        "originTerminal": "5", 
+                                        "mileage": 278, 
+                                        "destinationTerminal": "1", 
+                                        "duration": 75, 
+                                        "id": "Lwbw-fK+pD6lXEFh"
+                                    }
+                                ], 
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 3, 
+                                "bookingCode": "M", 
+                                "duration": 75, 
+                                "marriedSegmentGroup": "0", 
+                                "cabin": "COACH", 
+                                "id": "G64vLc9csJn6Is-E", 
+                                "flight": {
+                                    "carrier": "BA", 
+                                    "number": "836"
+                                }
+                            }
+                        ]
+                    }
+                ], 
+                "id": "D37leMkIvO9RqnELeXer6O00D"
+            }, 
+            {
+                "kind": "qpxexpress#tripOption", 
+                "pricing": [
+                    {
+                        "kind": "qpxexpress#pricingInfo", 
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "segmentId": "GxfzylWp9jxoi5ER", 
+                                "freeBaggageOption": [
+                                    {
+                                        "pieces": 1, 
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "bagDescriptor": [
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "BAG MAX 23KG 51LB  208LCM 81LI", 
+                                                "subcode": "0IZ", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 81 li/208 lcm"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "SPORTS EQUIPMENT 23KG 51LB", 
+                                                "subcode": "0I1", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 81 li/208 lcm"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "MUSICAL INSTRUMENT 23KG 51LB", 
+                                                "subcode": "0I2", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 81 li/208 lcm"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "MEDIA EQUIPMENT 23KG 51LB", 
+                                                "subcode": "0IP", 
+                                                "description": [
+                                                    "Media Equipment", 
+                                                    "Up to 50 lb/23 kg"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "BICYCLE", 
+                                                "subcode": "0EC", 
+                                                "description": [
+                                                    "Bicycle"
+                                                ], 
+                                                "count": 1
+                                            }
+                                        ]
+                                    }
+                                ], 
+                                "fareId": "A2yYrptjIp3ejmNTMFpldYRNbEE5zh0NBcsDBUfBkvCM"
+                            }
+                        ], 
+                        "saleTotal": "USD301.20", 
+                        "baseFareTotal": "GBP150.00", 
+                        "fare": [
+                            {
+                                "destination": "DUB", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "origin": "LON", 
+                                "carrier": "BA", 
+                                "id": "A2yYrptjIp3ejmNTMFpldYRNbEE5zh0NBcsDBUfBkvCM", 
+                                "basisCode": "MV2RO"
+                            }
+                        ], 
+                        "saleTaxTotal": "USD67.20", 
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts", 
+                            "adultCount": 1
+                        }, 
+                        "latestTicketingTime": "2015-08-02T23:59-04:00", 
+                        "saleFareTotal": "USD234.00", 
+                        "fareCalculation": "LON BA DUB 230.29MV2RO NUC 230.29 END ROE 0.651331 FARE GBP 150.00 EQU USD 234.00 XT 20.30GB 46.90UB", 
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD46.90", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "UB", 
+                                "id": "UB"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD20.30", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "GB", 
+                                "id": "GB_001"
+                            }
+                        ], 
+                        "ptc": "ADT"
+                    }
+                ], 
+                "saleTotal": "USD301.20", 
+                "slice": [
+                    {
+                        "kind": "qpxexpress#sliceInfo", 
+                        "duration": 80, 
+                        "segment": [
+                            {
+                                "leg": [
+                                    {
+                                        "destination": "DUB", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "origin": "LHR", 
+                                        "departureTime": "2015-08-04T17:25+01:00", 
+                                        "arrivalTime": "2015-08-04T18:45+01:00", 
+                                        "aircraft": "32A", 
+                                        "meal": "Snack or Brunch", 
+                                        "originTerminal": "5", 
+                                        "mileage": 278, 
+                                        "destinationTerminal": "1", 
+                                        "duration": 80, 
+                                        "id": "LycVyA4HPAFiee6f"
+                                    }
+                                ], 
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 4, 
+                                "bookingCode": "M", 
+                                "duration": 80, 
+                                "marriedSegmentGroup": "0", 
+                                "cabin": "COACH", 
+                                "id": "GxfzylWp9jxoi5ER", 
+                                "flight": {
+                                    "carrier": "BA", 
+                                    "number": "824"
+                                }
+                            }
+                        ]
+                    }
+                ], 
+                "id": "D37leMkIvO9RqnELeXer6O00E"
+            }, 
+            {
+                "kind": "qpxexpress#tripOption", 
+                "pricing": [
+                    {
+                        "kind": "qpxexpress#pricingInfo", 
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "segmentId": "GcOtOPqaXkTeE26r", 
+                                "freeBaggageOption": [
+                                    {
+                                        "pieces": 1, 
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "bagDescriptor": [
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "BAG MAX 23KG 51LB  208LCM 81LI", 
+                                                "subcode": "0IZ", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 81 li/208 lcm"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "SPORTS EQUIPMENT 23KG 51LB", 
+                                                "subcode": "0I1", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 81 li/208 lcm"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "MUSICAL INSTRUMENT 23KG 51LB", 
+                                                "subcode": "0I2", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 81 li/208 lcm"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "MEDIA EQUIPMENT 23KG 51LB", 
+                                                "subcode": "0IP", 
+                                                "description": [
+                                                    "Media Equipment", 
+                                                    "Up to 50 lb/23 kg"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "BICYCLE", 
+                                                "subcode": "0EC", 
+                                                "description": [
+                                                    "Bicycle"
+                                                ], 
+                                                "count": 1
+                                            }
+                                        ]
+                                    }
+                                ], 
+                                "fareId": "A2yYrptjIp3ejmNTMFpldYRNbEE5zh0NBcsDBUfBkvCM"
+                            }
+                        ], 
+                        "saleTotal": "USD301.20", 
+                        "baseFareTotal": "GBP150.00", 
+                        "fare": [
+                            {
+                                "destination": "DUB", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "origin": "LON", 
+                                "carrier": "BA", 
+                                "id": "A2yYrptjIp3ejmNTMFpldYRNbEE5zh0NBcsDBUfBkvCM", 
+                                "basisCode": "MV2RO"
+                            }
+                        ], 
+                        "saleTaxTotal": "USD67.20", 
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts", 
+                            "adultCount": 1
+                        }, 
+                        "latestTicketingTime": "2015-08-02T23:59-04:00", 
+                        "saleFareTotal": "USD234.00", 
+                        "fareCalculation": "LON BA DUB 230.29MV2RO NUC 230.29 END ROE 0.651331 FARE GBP 150.00 EQU USD 234.00 XT 20.30GB 46.90UB", 
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD46.90", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "UB", 
+                                "id": "UB"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD20.30", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "GB", 
+                                "id": "GB_001"
+                            }
+                        ], 
+                        "ptc": "ADT"
+                    }
+                ], 
+                "saleTotal": "USD301.20", 
+                "slice": [
+                    {
+                        "kind": "qpxexpress#sliceInfo", 
+                        "duration": 80, 
+                        "segment": [
+                            {
+                                "leg": [
+                                    {
+                                        "destination": "DUB", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "origin": "LHR", 
+                                        "departureTime": "2015-08-04T09:35+01:00", 
+                                        "arrivalTime": "2015-08-04T10:55+01:00", 
+                                        "aircraft": "32A", 
+                                        "meal": "Snack or Brunch", 
+                                        "originTerminal": "5", 
+                                        "mileage": 278, 
+                                        "destinationTerminal": "1", 
+                                        "duration": 80, 
+                                        "id": "LAaFZcUkLhbHHoNg"
+                                    }
+                                ], 
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 4, 
+                                "bookingCode": "M", 
+                                "duration": 80, 
+                                "marriedSegmentGroup": "0", 
+                                "cabin": "COACH", 
+                                "id": "GcOtOPqaXkTeE26r", 
+                                "flight": {
+                                    "carrier": "BA", 
+                                    "number": "828"
+                                }
+                            }
+                        ]
+                    }
+                ], 
+                "id": "D37leMkIvO9RqnELeXer6O00F"
+            }, 
+            {
+                "kind": "qpxexpress#tripOption", 
+                "pricing": [
+                    {
+                        "kind": "qpxexpress#pricingInfo", 
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "segmentId": "GsiyXbLjR5Drymek", 
+                                "freeBaggageOption": [
+                                    {
+                                        "pieces": 1, 
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "bagDescriptor": [
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "BAG MAX 23KG 51LB  208LCM 81LI", 
+                                                "subcode": "0IZ", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 81 li/208 lcm"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "SPORTS EQUIPMENT 23KG 51LB", 
+                                                "subcode": "0I1", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 81 li/208 lcm"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "MUSICAL INSTRUMENT 23KG 51LB", 
+                                                "subcode": "0I2", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 81 li/208 lcm"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "MEDIA EQUIPMENT 23KG 51LB", 
+                                                "subcode": "0IP", 
+                                                "description": [
+                                                    "Media Equipment", 
+                                                    "Up to 50 lb/23 kg"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "BICYCLE", 
+                                                "subcode": "0EC", 
+                                                "description": [
+                                                    "Bicycle"
+                                                ], 
+                                                "count": 1
+                                            }
+                                        ]
+                                    }
+                                ], 
+                                "fareId": "A2yYrptjIp3ejmNTMFpldYRNbEE5zh0NBcsDBUfBkvCM"
+                            }
+                        ], 
+                        "saleTotal": "USD301.20", 
+                        "baseFareTotal": "GBP150.00", 
+                        "fare": [
+                            {
+                                "destination": "DUB", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "origin": "LON", 
+                                "carrier": "BA", 
+                                "id": "A2yYrptjIp3ejmNTMFpldYRNbEE5zh0NBcsDBUfBkvCM", 
+                                "basisCode": "MV2RO"
+                            }
+                        ], 
+                        "saleTaxTotal": "USD67.20", 
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts", 
+                            "adultCount": 1
+                        }, 
+                        "latestTicketingTime": "2015-08-02T23:59-04:00", 
+                        "saleFareTotal": "USD234.00", 
+                        "fareCalculation": "LON BA DUB 230.29MV2RO NUC 230.29 END ROE 0.651331 FARE GBP 150.00 EQU USD 234.00 XT 20.30GB 46.90UB", 
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD46.90", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "UB", 
+                                "id": "UB"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD20.30", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "GB", 
+                                "id": "GB_001"
+                            }
+                        ], 
+                        "ptc": "ADT"
+                    }
+                ], 
+                "saleTotal": "USD301.20", 
+                "slice": [
+                    {
+                        "kind": "qpxexpress#sliceInfo", 
+                        "duration": 80, 
+                        "segment": [
+                            {
+                                "leg": [
+                                    {
+                                        "destination": "DUB", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "origin": "LHR", 
+                                        "departureTime": "2015-08-04T14:15+01:00", 
+                                        "arrivalTime": "2015-08-04T15:35+01:00", 
+                                        "aircraft": "319", 
+                                        "meal": "Snack or Brunch", 
+                                        "originTerminal": "5", 
+                                        "mileage": 278, 
+                                        "destinationTerminal": "1", 
+                                        "duration": 80, 
+                                        "id": "LS56MqqMG7AnexQz"
+                                    }
+                                ], 
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 9, 
+                                "bookingCode": "M", 
+                                "duration": 80, 
+                                "marriedSegmentGroup": "0", 
+                                "cabin": "COACH", 
+                                "id": "GsiyXbLjR5Drymek", 
+                                "flight": {
+                                    "carrier": "BA", 
+                                    "number": "830"
+                                }
+                            }
+                        ]
+                    }
+                ], 
+                "id": "D37leMkIvO9RqnELeXer6O00G"
+            }, 
+            {
+                "kind": "qpxexpress#tripOption", 
+                "pricing": [
+                    {
+                        "kind": "qpxexpress#pricingInfo", 
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "segmentId": "GsIIh5AUnJozTpV2", 
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "kilos": 20
+                                    }
+                                ], 
+                                "fareId": "A4kZjfoODq26FGCR2uC7fDS98K5oxryZxd1uB+YcUBkE"
+                            }
+                        ], 
+                        "saleTotal": "USD333.60", 
+                        "baseFareTotal": "GBP136.00", 
+                        "fare": [
+                            {
+                                "destination": "DUB", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "origin": "LON", 
+                                "carrier": "EI", 
+                                "id": "A4kZjfoODq26FGCR2uC7fDS98K5oxryZxd1uB+YcUBkE", 
+                                "basisCode": "HUK26GDS"
+                            }
+                        ], 
+                        "saleTaxTotal": "USD121.60", 
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts", 
+                            "adultCount": 1
+                        }, 
+                        "latestTicketingTime": "2015-07-31T14:51-04:00", 
+                        "saleFareTotal": "USD212.00", 
+                        "fareCalculation": "LHR EI DUB 208.80HUK26GDS NUC 208.80 END ROE 0.651331 FARE GBP 136.00 EQU USD 212.00 XT 20.30GB 46.90UB 35.70YQ 18.70YR", 
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD20.30", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "GB", 
+                                "id": "GB_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD46.90", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "UB", 
+                                "id": "UB"
+                            }, 
+                            {
+                                "code": "YQ", 
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD35.70", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "id": "YQ_F"
+                            }, 
+                            {
+                                "code": "YR", 
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD18.70", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "id": "YR_I"
+                            }
+                        ], 
+                        "ptc": "ADT"
+                    }
+                ], 
+                "saleTotal": "USD333.60", 
+                "slice": [
+                    {
+                        "kind": "qpxexpress#sliceInfo", 
+                        "duration": 80, 
+                        "segment": [
+                            {
+                                "leg": [
+                                    {
+                                        "destination": "DUB", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "origin": "LHR", 
+                                        "departureTime": "2015-08-04T08:50+01:00", 
+                                        "arrivalTime": "2015-08-04T10:10+01:00", 
+                                        "aircraft": "320", 
+                                        "meal": "Food and Beverages for Purchase", 
+                                        "originTerminal": "2", 
+                                        "mileage": 278, 
+                                        "destinationTerminal": "2", 
+                                        "duration": 80, 
+                                        "id": "L78GHtS2cOdAtpnO"
+                                    }
+                                ], 
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 4, 
+                                "bookingCode": "H", 
+                                "duration": 80, 
+                                "marriedSegmentGroup": "0", 
+                                "cabin": "COACH", 
+                                "id": "GsIIh5AUnJozTpV2", 
+                                "flight": {
+                                    "carrier": "EI", 
+                                    "number": "153"
+                                }
+                            }
+                        ]
+                    }
+                ], 
+                "id": "D37leMkIvO9RqnELeXer6O00H"
+            }, 
+            {
+                "kind": "qpxexpress#tripOption", 
+                "pricing": [
+                    {
+                        "kind": "qpxexpress#pricingInfo", 
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "segmentId": "GT2cFiPO55S3tZrI", 
+                                "freeBaggageOption": [
+                                    {
+                                        "pieces": 1, 
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "bagDescriptor": [
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "BAG MAX 23KG 51LB  208LCM 81LI", 
+                                                "subcode": "0IZ", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 81 li/208 lcm"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "SPORTS EQUIPMENT 23KG 51LB", 
+                                                "subcode": "0I1", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 81 li/208 lcm"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "MUSICAL INSTRUMENT 23KG 51LB", 
+                                                "subcode": "0I2", 
+                                                "description": [
+                                                    "Up to 50 lb/23 kg", 
+                                                    "Up to 81 li/208 lcm"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "MEDIA EQUIPMENT 23KG 51LB", 
+                                                "subcode": "0IP", 
+                                                "description": [
+                                                    "Media Equipment", 
+                                                    "Up to 50 lb/23 kg"
+                                                ], 
+                                                "count": 1
+                                            }, 
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor", 
+                                                "commercialName": "BICYCLE", 
+                                                "subcode": "0EC", 
+                                                "description": [
+                                                    "Bicycle"
+                                                ], 
+                                                "count": 1
+                                            }
+                                        ]
+                                    }
+                                ], 
+                                "fareId": "ALl2ObFIjj7R7Jzl6Qup18yeXsPKW2WugWLXxkkUEu+I"
+                            }
+                        ], 
+                        "saleTotal": "USD355.20", 
+                        "baseFareTotal": "GBP185.00", 
+                        "fare": [
+                            {
+                                "destination": "DUB", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "origin": "LON", 
+                                "carrier": "BA", 
+                                "id": "ALl2ObFIjj7R7Jzl6Qup18yeXsPKW2WugWLXxkkUEu+I", 
+                                "basisCode": "KV2RO"
+                            }
+                        ], 
+                        "saleTaxTotal": "USD67.20", 
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts", 
+                            "adultCount": 1
+                        }, 
+                        "latestTicketingTime": "2015-08-02T23:59-04:00", 
+                        "saleFareTotal": "USD288.00", 
+                        "fareCalculation": "LON BA DUB 284.03KV2RO NUC 284.03 END ROE 0.651331 FARE GBP 185.00 EQU USD 288.00 XT 20.30GB 46.90UB", 
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD46.90", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "UB", 
+                                "id": "UB"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD20.30", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "GB", 
+                                "id": "GB_001"
+                            }
+                        ], 
+                        "ptc": "ADT"
+                    }
+                ], 
+                "saleTotal": "USD355.20", 
+                "slice": [
+                    {
+                        "kind": "qpxexpress#sliceInfo", 
+                        "duration": 75, 
+                        "segment": [
+                            {
+                                "leg": [
+                                    {
+                                        "destination": "DUB", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "origin": "LHR", 
+                                        "departureTime": "2015-08-04T06:50+01:00", 
+                                        "arrivalTime": "2015-08-04T08:05+01:00", 
+                                        "aircraft": "319", 
+                                        "meal": "Snack or Brunch", 
+                                        "originTerminal": "5", 
+                                        "mileage": 278, 
+                                        "destinationTerminal": "1", 
+                                        "duration": 75, 
+                                        "id": "LgYiAUjXuH1vJfBo"
+                                    }
+                                ], 
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 3, 
+                                "bookingCode": "K", 
+                                "duration": 75, 
+                                "marriedSegmentGroup": "0", 
+                                "cabin": "COACH", 
+                                "id": "GT2cFiPO55S3tZrI", 
+                                "flight": {
+                                    "carrier": "BA", 
+                                    "number": "832"
+                                }
+                            }
+                        ]
+                    }
+                ], 
+                "id": "D37leMkIvO9RqnELeXer6O00I"
+            }, 
+            {
+                "kind": "qpxexpress#tripOption", 
+                "pricing": [
+                    {
+                        "kind": "qpxexpress#pricingInfo", 
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "segmentId": "G4nIidemGpAdluXt", 
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "kilos": 20
+                                    }
+                                ], 
+                                "fareId": "A8es1kaAvOSYdC9gqekH5H771dV2XDHWFPNmd72NbNZE"
+                            }
+                        ], 
+                        "saleTotal": "USD442.60", 
+                        "baseFareTotal": "GBP206.00", 
+                        "fare": [
+                            {
+                                "destination": "DUB", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "origin": "LON", 
+                                "carrier": "EI", 
+                                "id": "A8es1kaAvOSYdC9gqekH5H771dV2XDHWFPNmd72NbNZE", 
+                                "basisCode": "DUK26GDS"
+                            }
+                        ], 
+                        "saleTaxTotal": "USD121.60", 
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts", 
+                            "adultCount": 1
+                        }, 
+                        "latestTicketingTime": "2015-07-31T14:51-04:00", 
+                        "saleFareTotal": "USD321.00", 
+                        "fareCalculation": "LHR EI DUB 316.27DUK26GDS NUC 316.27 END ROE 0.651331 FARE GBP 206.00 EQU USD 321.00 XT 20.30GB 46.90UB 35.70YQ 18.70YR", 
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD20.30", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "GB", 
+                                "id": "GB_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD46.90", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "UB", 
+                                "id": "UB"
+                            }, 
+                            {
+                                "code": "YQ", 
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD35.70", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "id": "YQ_F"
+                            }, 
+                            {
+                                "code": "YR", 
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD18.70", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "id": "YR_I"
+                            }
+                        ], 
+                        "ptc": "ADT"
+                    }
+                ], 
+                "saleTotal": "USD442.60", 
+                "slice": [
+                    {
+                        "kind": "qpxexpress#sliceInfo", 
+                        "duration": 80, 
+                        "segment": [
+                            {
+                                "leg": [
+                                    {
+                                        "destination": "DUB", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "origin": "LHR", 
+                                        "departureTime": "2015-08-04T06:40+01:00", 
+                                        "arrivalTime": "2015-08-04T08:00+01:00", 
+                                        "aircraft": "320", 
+                                        "meal": "Food and Beverages for Purchase", 
+                                        "originTerminal": "2", 
+                                        "mileage": 278, 
+                                        "destinationTerminal": "2", 
+                                        "duration": 80, 
+                                        "id": "LKEbZJfeXOZOsyix"
+                                    }
+                                ], 
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 4, 
+                                "bookingCode": "D", 
+                                "duration": 80, 
+                                "marriedSegmentGroup": "0", 
+                                "cabin": "COACH", 
+                                "id": "G4nIidemGpAdluXt", 
+                                "flight": {
+                                    "carrier": "EI", 
+                                    "number": "149"
+                                }
+                            }
+                        ]
+                    }
+                ], 
+                "id": "D37leMkIvO9RqnELeXer6O00J"
+            }, 
+            {
+                "kind": "qpxexpress#tripOption", 
+                "pricing": [
+                    {
+                        "kind": "qpxexpress#pricingInfo", 
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing", 
+                                "segmentId": "GDfM0YneTiICTyto", 
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance", 
+                                        "kilos": 20
+                                    }
+                                ], 
+                                "fareId": "A89zhO5VD3co8GO8MKs0oKIW+Vw3c+pHf9WfL2iFTtec"
+                            }
+                        ], 
+                        "saleTotal": "USD523.60", 
+                        "baseFareTotal": "GBP258.00", 
+                        "fare": [
+                            {
+                                "destination": "DUB", 
+                                "kind": "qpxexpress#fareInfo", 
+                                "origin": "LON", 
+                                "carrier": "EI", 
+                                "id": "A89zhO5VD3co8GO8MKs0oKIW+Vw3c+pHf9WfL2iFTtec", 
+                                "basisCode": "CUK26GDS"
+                            }
+                        ], 
+                        "saleTaxTotal": "USD121.60", 
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts", 
+                            "adultCount": 1
+                        }, 
+                        "latestTicketingTime": "2015-07-31T14:51-04:00", 
+                        "saleFareTotal": "USD402.00", 
+                        "fareCalculation": "LHR EI DUB 396.11CUK26GDS NUC 396.11 END ROE 0.651331 FARE GBP 258.00 EQU USD 402.00 XT 20.30GB 46.90UB 35.70YQ 18.70YR", 
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD20.30", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "GB", 
+                                "id": "GB_001"
+                            }, 
+                            {
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD46.90", 
+                                "chargeType": "GOVERNMENT", 
+                                "country": "GB", 
+                                "code": "UB", 
+                                "id": "UB"
+                            }, 
+                            {
+                                "code": "YQ", 
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD35.70", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "id": "YQ_F"
+                            }, 
+                            {
+                                "code": "YR", 
+                                "kind": "qpxexpress#taxInfo", 
+                                "salePrice": "USD18.70", 
+                                "chargeType": "CARRIER_SURCHARGE", 
+                                "id": "YR_I"
+                            }
+                        ], 
+                        "ptc": "ADT"
+                    }
+                ], 
+                "saleTotal": "USD523.60", 
+                "slice": [
+                    {
+                        "kind": "qpxexpress#sliceInfo", 
+                        "duration": 80, 
+                        "segment": [
+                            {
+                                "leg": [
+                                    {
+                                        "destination": "DUB", 
+                                        "kind": "qpxexpress#legInfo", 
+                                        "origin": "LHR", 
+                                        "departureTime": "2015-08-04T07:30+01:00", 
+                                        "arrivalTime": "2015-08-04T08:50+01:00", 
+                                        "aircraft": "320", 
+                                        "meal": "Food and Beverages for Purchase", 
+                                        "originTerminal": "2", 
+                                        "mileage": 278, 
+                                        "destinationTerminal": "2", 
+                                        "duration": 80, 
+                                        "id": "LwyWF+EKaVlTpFHY"
+                                    }
+                                ], 
+                                "kind": "qpxexpress#segmentInfo", 
+                                "bookingCodeCount": 4, 
+                                "bookingCode": "C", 
+                                "duration": 80, 
+                                "marriedSegmentGroup": "0", 
+                                "cabin": "COACH", 
+                                "id": "GDfM0YneTiICTyto", 
+                                "flight": {
+                                    "carrier": "EI", 
+                                    "number": "151"
+                                }
+                            }
+                        ]
+                    }
+                ], 
+                "id": "D37leMkIvO9RqnELeXer6O00K"
+            }
+        ], 
+        "requestId": "c1cN43hwAKDdcRLJQ0MaWR"
+    }
+}

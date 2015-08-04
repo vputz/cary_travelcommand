@@ -1,0 +1,26 @@
+{
+    "request": {
+        "solutions": 20, 
+        "passengers": {
+            "infantInLapCount": 0, 
+            "adultCount": 1, 
+            "infantInSeatCount": 0, 
+            "childCount": 0, 
+            "seniorCount": 0
+        }, 
+        "refundable": false, 
+        "slice": [
+            {
+                "destination": "DUB", 
+                "origin": "LHR", 
+                "date": "2015-08-04"
+            }, 
+            {
+                "destination": "LHR", 
+                "origin": "DUB", 
+                "date": "2015-08-05"
+            }
+        ], 
+        "saleCountry": "US"
+    }
+}
