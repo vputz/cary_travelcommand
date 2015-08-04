@@ -186,7 +186,6 @@ def make_test_estimator():
     def fakeFile(path):
         return os.path.join(base, path)
 
-    print(base)
     return FakeQPXCostEstimator("nokey",
                                 fakeFile("sample_single_request.json"),
                                 fakeFile("sample_roundtrip_request.json"),
