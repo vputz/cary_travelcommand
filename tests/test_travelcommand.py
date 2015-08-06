@@ -1,4 +1,5 @@
 from pytest_bdd import scenario, given, then, parsers
+import os
 from cary_travelcommand.travel_parser import TestAirportLookup, TestTrainLookup, trip_leg_parser
 from cary_travelcommand.travel_parser import route_parser, AirportLookup, date_range_parser
 from cary_travelcommand.travel_calculations import days_from_leg, perdiem_costs_by_query
@@ -99,7 +100,7 @@ def test_airport_lookup():
 
 @given('a dict from airport csv')
 def airport_lookup():
-    return AirportLookup(filename="plugin_data/travel/airports.csv")
+    return AirportLookup(filename=os.path.join(os.path.split(__file__)[0],'test_data/airports.csv'))
 
 
 @then('check that for <identifier> we get the right <locstring>')
