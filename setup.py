@@ -17,7 +17,7 @@ the parser is fairly permissive but gets tripped up periodically.
 setup(
     name='cary_travelcommand',
     version='1.0.0',
-    description='US gov per-diem lookup for Cary',
+    description='US gov travel estimate for Cary',
     long_description=long_description,
     url='https://github.com/vputz/cary_travelcommand',
     author='Victor Putz',
