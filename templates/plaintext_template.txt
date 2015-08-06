@@ -2,6 +2,13 @@ Note: This email is also in an easier-to-read HTML form!  View as HTML in your e
 
 Your daily travel costs for your planned trip:
 
+Summary:
+
+Travel: {{ costs | trip_travel_cost | dollars }}
+Lodging: {{ costs | trip_lodging_cost | dollars }}
+MIE: {{ costs | trip_mie_cost | dollars }}
+Total: {{ costs | trip_total_cost | dollars }}
+
 {% for leg in costs %}
 Leg: {{ leg.route['start'] }}->{{ leg.route['end'] }}
 {% if leg.costs.travel_cost.found %}
@@ -23,6 +30,9 @@ Date: {{ day.day.strftime("%d %B %Y") }}
 Lodging: {{ day.lodging|dollars }} x {{day.lodging_multiplier}} = {{day.lodging_actual|dollars}}
 M&IE: {{ (day.meals+day.incidentals)|dollars }} x {{ day.mie_multiplier }} = {{day.mie_actual|dollars}}
 {% endfor %}
+
+Leg lodging: {{ leg | lodgingcost | dollars }}
+Leg MIE: {{ leg | miecost | dollars }}
 {% endif %}
 {% endfor %}
 

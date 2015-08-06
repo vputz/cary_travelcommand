@@ -9,6 +9,25 @@
     </head>
     <body>
 	<h1>Trip Summary</h1>
+	<table border="1">
+	    <tr>
+		<td class="centerText">Travel</td>
+		<td class="centerText">{{ costs | trip_travel_cost | dollars }}</td>
+	    </tr>
+	    <tr>
+		<td class="centerText">Lodging</td>
+		<td class="centerText">{{ costs | trip_lodging_cost | dollars }}</td>
+	    </tr>
+	    <tr>
+		<td class="centerText">MIE</td>
+		<td class="centerText">{{ costs | trip_mie_cost | dollars }}</td>
+	    </tr>
+	    <tr>
+		<td class="centerText">Total</td>
+		<td class="centerText">{{ costs | trip_total_cost | dollars }}</td>
+	    </tr>
+	</table>
+	<h1>Details</h1>
 	{% for leg in costs %}
 	<h2>Leg: {{ leg.route['start'] }} -- {{ leg.route['end'] }}</h2>
 	{% if leg.costs.travel_cost.found %}
@@ -30,7 +49,7 @@
 	    <pre>City, State, USA</pre>) form.
 	</p>
 	{% else %}
-	<table border="1"">
+	<table border="1">
 	    <tr>
 		<th class="centerText" >Date</th>
 		<th class="centerText" >Lodging</th>
@@ -51,6 +70,15 @@
 		<td class="centerText" >{{ day.mie_actual | dollars }}</td>
 	    </tr>
 	    {% endfor %}
+	    <tr>
+		<td class="centerText">Total</td>
+		<td class="centerText"></td>
+		<td class="centerText"></td>
+		<td class="centerText">{{ leg | lodgingcost | dollars }}</td>
+		<td class="centerText"></td>
+		<td class="centerText"></td>
+		<td class="centerText">{{ leg | miecost | dollars }}</td>
+	    </tr>
 	</table>
 	{% endif %}
 	{% endfor %}

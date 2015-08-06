@@ -14,6 +14,8 @@ Feature: Travel command
     | 26 Jul 2013 to 27 Jul 2013 | A    |
     | 26 to 27 jul 2013          | A    |
     | 31 Jan to 2 feb 2014       | B    |
+    | 20 Jan to 20 Jan 2015      | C    |
+    | 20 Jan 2015                | C    |
 
   Scenario Outline: check for travel leg parsing
 

@@ -26,12 +26,41 @@ class TravelCommand(CaryCommand):
         return TravelAction(parsed_message)
 
 
+def lodgingcost_filter(leg):
+    return sum([day['lodging_actual'] for day in leg['costs']['dates']])
+
+
+def miecost_filter(leg):
+    return sum([day['mie_actual'] for day in leg['costs']['dates']])
+
+
 def dollars_filter(value):
     return "${0:0.2f}".format(value)
 
 
 def mean_filter(value):
     return sum(value) / len(value)
+
+
+def trip_travel_cost(costs):
+    def leg_travel_cost(leg):
+        travel_cost = leg['costs']['travel_cost']
+        return mean_filter(travel_cost['fares']) if travel_cost['found'] else 0
+    return sum([leg_travel_cost(leg) for leg in costs])
+
+
+def trip_lodging_cost(costs):
+    return sum([lodgingcost_filter(leg) for leg in costs])
+
+
+def trip_mie_cost(costs):
+    return sum([miecost_filter(leg) for leg in costs])
+
+
+def trip_total_cost(costs):
+    return trip_travel_cost(costs) \
+      + trip_lodging_cost(costs) \
+      + trip_mie_cost(costs)
 
 
 class TravelAction(CaryAction):
@@ -60,6 +89,12 @@ class TravelAction(CaryAction):
             )
         self.environment.filters['dollars'] = dollars_filter
         self.environment.filters['mean'] = mean_filter
+        self.environment.filters['lodgingcost'] = lodgingcost_filter
+        self.environment.filters['miecost'] = miecost_filter
+        self.environment.filters['trip_travel_cost'] = trip_travel_cost
+        self.environment.filters['trip_lodging_cost'] = trip_lodging_cost
+        self.environment.filters['trip_mie_cost'] = trip_mie_cost
+        self.environment.filters['trip_total_cost'] = trip_total_cost
         self.lookups = [AirportLookup(self.config['AIRPORT_DATA']),
                         TrainStationLookup(self.config['TRAIN_STATION_DATA'])]
 

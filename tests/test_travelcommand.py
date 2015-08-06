@@ -27,9 +27,12 @@ def sample_date_parser():
 def check_parsed_range(drange, sample_date_parser, spec):
     pr = sample_date_parser.parseString(drange)
     specs = {'A': {'start': datetime.date(2013, 7, 26),
-                   'end': datetime.date(2013, 7, 27)},
+                   'end': datetime.date(2013, 7, 27)
+                   },
             'B': {'start': datetime.date(2014, 1, 31),
-                  'end': datetime.date(2014, 2, 2)}
+                  'end': datetime.date(2014, 2, 2)},
+            'C': {'start': datetime.date(2015, 1, 20),
+                  'end': datetime.date(2015, 1, 20)}
                   }
     assert pr[0] == specs[spec]
 

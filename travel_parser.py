@@ -274,12 +274,14 @@ def date_parser():
 
 def date_range_parser():
     def date_range_v1_parse(s, l, t):
-        return dict(start=t.start, end=t.end)
+        end_date = t.end if t.end != '' else t.start
+        return dict(start=t.start, end=end_date)
 
     dates_separator = oneOf("- to")
 
-    date_range_v1 = date_parser().setResultsName("start") + Optional(dates_separator).suppress()\
-      + date_parser().setResultsName("end")
+    date_range_v1 = date_parser().setResultsName("start") \
+      + Optional((dates_separator).suppress()\
+                 + date_parser().setResultsName("end"))
     date_range_v1.setParseAction(date_range_v1_parse)
 
     def date_range_v2_parse(s, l, t):
@@ -292,7 +294,6 @@ def date_range_parser():
             return dict(start=datetime.date(year, start_month, t.start_day),
                         end=datetime.date(year, t.end_month, end_day))
         except Exception as e:
-            logging.error(repr(e))
             raise e
 
     day = Word(nums).setParseAction(strToInt)
@@ -306,6 +307,7 @@ def date_range_parser():
       + Optional(year).setResultsName("year")
 
     date_range_v2.setParseAction(date_range_v2_parse)
+
     date_range = date_range_v2 | date_range_v1
 
     return date_range

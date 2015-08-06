@@ -11,5 +11,5 @@ To: cary@thingotron.com
 Content-Type: text/plain; charset=UTF-8
 
 lhr-dub 1-3 Jul staying in Kilkenny, Ireland
-dub-lhr 3-4 Jul
+dub-lhr 3 Jul
 
