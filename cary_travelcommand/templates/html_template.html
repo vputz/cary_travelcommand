@@ -16,7 +16,7 @@
 	    The following locations gave me trouble:
 	    <ul>
 		{% for loc in poor_matches %}
-		<li>loc</li>
+		<li>{{ loc }}</li>
 		{% endfor %}
 	    </ul>
 	</p>
@@ -57,8 +57,8 @@
 	</p>
 	<p>
 	    Try explicitly stating where you are staying by putting "staying in X" after
-	    your route, where X is your location in <pre>City, Country</pre> (or
-	    <pre>City, State, USA</pre>) form.
+	    your route, where X is your location in <code>City, Country</code> (or
+	    <code>City, State, USA</code>) form.
 	</p>
 	{% else %}
 	<table border="1">
