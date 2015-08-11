@@ -1,5 +1,13 @@
 Note: This email is also in an easier-to-read HTML form!  View as HTML in your email program.
 
+{% if poor_matches_exist %}
+WARNING: I was either unable to calculate costs for some locations, or I wasn't sure of their
+results.  The following locations gave me trouble:
+{% for loc in poor_matches %}
+  - {{ loc }}
+{% endfor %}
+{% endif %}
+
 Your daily travel costs for your planned trip:
 
 Summary:

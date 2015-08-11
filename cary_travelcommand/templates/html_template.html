@@ -9,6 +9,18 @@
     </head>
     <body>
 	<h1>Trip Summary</h1>
+	{% if poor_matches_exist %}
+	<h2>WARNING</h2>
+	<p>
+	    I was either unable to match some places on this list or wasn't completely sure about the results.
+	    The following locations gave me trouble:
+	    <ul>
+		{% for loc in poor_matches %}
+		<li>loc</li>
+		{% endfor %}
+	    </ul>
+	</p>
+	{% endif %}
 	<table border="1">
 	    <tr>
 		<td class="centerText">Travel</td>

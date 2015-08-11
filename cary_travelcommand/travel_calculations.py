@@ -38,12 +38,15 @@ def perdiem_costs_by_query(days, query):
 
     if not query['found']:
         result = dict(
+            searched_location=query['original_search_location'],
             travel_cost=None,
             matched_location=None
             )
     else:
         topmatch = query['closest_matches'][0]
         result = dict(
+            searched_location=query['original_search_location'],
+            score=topmatch['score'],
             travel_cost=None,
             matched_location=topmatch['location'],
             dates=[cost_for_day(
@@ -92,9 +95,14 @@ def trip_costs_by_perdiems(trip, perdiems):
     return legs
 
 
-def trip_costs(trip, pd_db):
-    perdiems = [pd_db.perdiem_query(leg['staying_in']) for leg in trip]
-
+def trip_costs(trip, pd_db, threshold):
+    perdiems = [pd_db.perdiem_query(leg['staying_in'], threshold=threshold) 
+                for leg in trip]
+    for leg_pd in perdiems:
+        logging.debug("Returned {0} matches, top being {1}".format(
+            len(leg_pd['closest_matches']),
+            leg_pd['closest_matches'][0] if leg_pd['found'] else "NO MATCH"
+        ))
     legs = trip_costs_by_perdiems(
         trip,
         perdiems
@@ -133,7 +141,7 @@ def calculated_trip_costs(trip_costs, route_estimators=[]):
     return result
 
 
-def adjusted_trip_costs(trip, pd_db, route_estimators=[]):
-    result = trip_costs(trip, pd_db)
+def adjusted_trip_costs(trip, pd_db, route_estimators=[], threshold=90):
+    result = trip_costs(trip, pd_db, threshold=threshold)
     return calculated_trip_costs(result, route_estimators)
     return result
