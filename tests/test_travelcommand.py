@@ -30,11 +30,11 @@ def check_parsed_range(drange, sample_date_parser, spec):
     specs = {'A': {'start': datetime.date(2013, 7, 26),
                    'end': datetime.date(2013, 7, 27)
                    },
-            'B': {'start': datetime.date(2014, 1, 31),
-                  'end': datetime.date(2014, 2, 2)},
-            'C': {'start': datetime.date(2015, 1, 20),
-                  'end': datetime.date(2015, 1, 20)}
-                  }
+             'B': {'start': datetime.date(2014, 1, 31),
+                   'end': datetime.date(2014, 2, 2)},
+             'C': {'start': datetime.date(2015, 1, 20),
+                   'end': datetime.date(2015, 1, 20)}
+    }
     assert pr[0] == specs[spec]
 
 
@@ -80,15 +80,18 @@ def check_leg_matches_spec(trip_leg_test_parser, leg, spec):
     specs = {'A': {'route': {'start': 'LHR',
                              'end': 'DUB',
                              'mode': 'air'},
-                    'dates': {'start': datetime.date(2013, 7, 26),
-                              'end': datetime.date(2013, 7, 27)},
-                    'staying_in': 'Dublin, Ireland'},
-            'B': {'dates': {'start': datetime.date(2014, 5, 5),
-                            'end': datetime.date(2014, 5, 7)},
-                    'staying_in': 'Manchester'},
-            'C': {'dates': {'start': datetime.date(2016, 6, 4),
-                            'end': datetime.date(2016, 6, 6)},
-                    'staying_in': 'Baltimore, MD, USA'}}
+                   'dates': {'start': datetime.date(2013, 7, 26),
+                             'end': datetime.date(2013, 7, 27)},
+                   'staying_in': 'Dublin, Ireland'},
+             'B': {'dates': {'start': datetime.date(2014, 5, 5),
+                             'end': datetime.date(2014, 5, 7)},
+                   'staying_in': 'Manchester'},
+             'C': {'dates': {'start': datetime.date(2016, 6, 4),
+                             'end': datetime.date(2016, 6, 6)},
+                   'staying_in': 'Baltimore, MD, USA'},
+             'D': {'dates': {'start': datetime.date(2016, 6, 4),
+                             'end': datetime.date(2016, 6, 6)},
+                   'staying_in': 'wright-patterson afb, OH, USA'}}
 
     assert p[0] == specs[spec]
 
@@ -144,20 +147,20 @@ def sample_perdiem_query():
                                               'exp_date': '01/31/2015',
                                               'lodging': '214',
                                               'prop_meals': '55'},
-                                              {'incidentals': '23',
-                                               'meals': '114',
-                                               'eff_date': '02/01/2015',
-                                               'exp_date': '06/30/2015',
-                                               'lodging': '202',
+                                             {'incidentals': '23',
+                                              'meals': '114',
+                                              'eff_date': '02/01/2015',
+                                              'exp_date': '06/30/2015',
+                                              'lodging': '202',
                                               'prop_meals': '53'},
-                                              {'incidentals': '23',
-                                               'meals': '116',
+                                             {'incidentals': '23',
+                                              'meals': '116',
                                               'eff_date': '07/01/2015',
                                               'exp_date': '12/31/2049',
                                               'lodging': '208',
                                               'prop_meals': '54'}],
-                                              'score': 100,
-                                              'location': 'MANCHESTER, GBR'}]}
+                                 'score': 100,
+                                 'location': 'MANCHESTER, GBR'}]}
 
 
 @scenario('travelcommand.feature', 'get costs from leg')
@@ -172,19 +175,21 @@ def sample_costs():
                 {'meals': 120,
                  'incidentals': 24,
                  'lodging_multiplier': 1.0,
-                'day': datetime.date(2015, 1, 31),
-                'mie_multiplier': 1.0, 'lodging': 214},
+                 'day': datetime.date(2015, 1, 31),
+                 'mie_multiplier': 1.0, 'lodging': 214},
                 {'meals': 114,
                  'incidentals': 23,
                  'lodging_multiplier': 1.0,
-                'day': datetime.date(2015, 2, 1),
-                'mie_multiplier': 1.0,
-                'lodging': 202},
+                 'day': datetime.date(2015, 2, 1),
+                 'mie_multiplier': 1.0,
+                 'lodging': 202},
                 {'meals': 114,
                  'incidentals': 23,
-                'lodging_multiplier': 1.0,
-                'day': datetime.date(2015, 2, 2),
-                'mie_multiplier': 1.0, 'lodging': 202}],
+                 'lodging_multiplier': 1.0,
+                 'day': datetime.date(2015, 2, 2),
+                 'mie_multiplier': 1.0, 'lodging': 202}],
+            'searched_location': 'manchester, united kingdom',
+            'score': 100,
             'travel_cost': None}
 
 
@@ -203,24 +208,26 @@ def sample_adjusted_costs():
                          'incidentals': 24,
                          'lodging_multiplier': 1.0,
                          'mie_multiplier': 0.75},
-                         {'lodging': 202,
-                        'meals': 114,
-                       'mie_actual': 137.0,
-                       'lodging_actual': 202.0,
+                        {'lodging': 202,
+                         'meals': 114,
+                         'mie_actual': 137.0,
+                         'lodging_actual': 202.0,
                          'day': datetime.date(2015, 2, 1),
                          'incidentals': 23,
                          'lodging_multiplier': 1.0,
                          'mie_multiplier': 1.0},
-                       {'lodging': 202,
-                        'meals': 114,
-                       'mie_actual': 102.75,
-                       'lodging_actual': 0.0,
-                       'day': datetime.date(2015, 2, 2),
-                       'incidentals': 23,
-                       'lodging_multiplier': 0.0,
-                       'mie_multiplier': 0.75}],
-            'matched_location': 'MANCHESTER, GBR',
-            'travel_cost': None}}]
+                        {'lodging': 202,
+                         'meals': 114,
+                         'mie_actual': 102.75,
+                         'lodging_actual': 0.0,
+                         'day': datetime.date(2015, 2, 2),
+                         'incidentals': 23,
+                         'lodging_multiplier': 0.0,
+                         'mie_multiplier': 0.75}],
+                       'matched_location': 'MANCHESTER, GBR',
+                       'searched_location': 'manchester, united kingdom',
+                       'score': 100,
+                       'travel_cost': None}}]
 
 
 @then('check it matches sample costs')
@@ -271,11 +278,12 @@ def failed_perdiem_query():
 @given('sample failed calculated costs')
 def sample_failed_calculated_costs():
     return [{'costs': {'matched_location': None,
+                       'searched_location': 'FROBNITZ, SNORDONIA',
                        'travel_cost': None},
-            'route': None,
-            'dates': {'end': datetime.date(2015, 2, 2),
-                        'start': datetime.date(2015, 1, 31)},
-            'staying_in': 'Manchester'}]
+             'route': None,
+             'dates': {'end': datetime.date(2015, 2, 2),
+                       'start': datetime.date(2015, 1, 31)},
+             'staying_in': 'Manchester'}]
 
 
 @then('check the result reflects the data not found')

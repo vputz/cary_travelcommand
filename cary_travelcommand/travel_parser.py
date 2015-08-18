@@ -257,11 +257,11 @@ def date_parser():
             logging.error(repr(e))
             raise e
 
-    date_v1 = year.setResultsName("year")\
-      + Optional(datesep).suppress()\
-      + nummonth.setResultsName("month")\
-      + Optional(datesep).suppress()\
-      + day.setResultsName("day")
+    date_v1 = year.setResultsName("year") + \
+              Optional(datesep).suppress() + \
+              nummonth.setResultsName("month") + \
+              Optional(datesep).suppress() + \
+              day.setResultsName("day")
 
     date_v2 = day.setResultsName("day")\
       + month_parser().setResultsName("month")\
@@ -314,15 +314,13 @@ def date_range_parser():
 
 
 def trip_leg_parser(lookups):
-    anyloc = OneOrMore(Word(alphas)) \
-      + Optional(OneOrMore(CaselessLiteral(",").suppress()
-                           + OneOrMore(Word(alphas))))
-    anyloc.setParseAction(lambda s, l, t: ", ".join(t))
-    trip_leg = Optional(route_parser(lookups).setResultsName("route")) \
-      + date_range_parser().setResultsName("dates") \
-      + Optional(Optional("staying").suppress()
-                 + CaselessLiteral("in").suppress()
-                 + anyloc.setResultsName("staying_in"))
+    anyloc = OneOrMore(Word(alphas+"-,"))
+    anyloc.setParseAction(lambda s, l, t: " ".join(t))
+    trip_leg = Optional(route_parser(lookups).setResultsName("route")) + \
+               date_range_parser().setResultsName("dates") + \
+               Optional(Optional("staying").suppress() +
+                        CaselessLiteral("in").suppress() +
+                        anyloc.setResultsName("staying_in"))
 
     def staying_in_location(route):
         for lookup in lookups:
@@ -352,4 +350,3 @@ def trip_parser(lookups):
 
     trip_parser = t + ZeroOrMore(LineEnd().suppress() + t)
     return trip_parser
-

@@ -24,13 +24,13 @@ Feature: Travel command
     Then check it matches a <spec>
 
     Examples:
-    | leg                                    | spec |
-    | lhr->dub 26-27 Jul 2013                | A    |
-    | lhr - dub 2013/07/26-2013/07/27        | A    |
-    | lhr->dub 26 Jul 2013 to 27 Jul 2013    | A    |
-    | 5 May 2014 to 7 May 2014 in Manchester | B    |
-    | 4-6 jun 2016 in Baltimore, MD, USA     | C    |
-
+    | leg                                                   | spec |
+    | lhr->dub 26-27 Jul 2013                               | A    |
+    | lhr - dub 2013/07/26-2013/07/27                       | A    |
+    | lhr->dub 26 Jul 2013 to 27 Jul 2013                   | A    |
+    | 5 May 2014 to 7 May 2014 in Manchester                | B    |
+    | 4-6 jun 2016 in Baltimore, MD, USA                    | C    |
+    | 4-6 jun 2016 staying in wright-patterson afb, OH, USA | D    |
 
 
   Scenario Outline: check route parsing
